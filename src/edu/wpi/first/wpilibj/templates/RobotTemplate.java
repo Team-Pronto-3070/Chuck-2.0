@@ -7,7 +7,7 @@ public class RobotTemplate extends IterativeRobot implements Pronstants{
     Compressor compressor;
     Pronstants pronstants;
     public void robotInit() {
-        compressor = new Compressor(COMPRESSOR_1,COMPRESSOR_2,COMPRESSOR_3,COMPRESSOR_4);
+        compressor = new Compressor(COMPRESSOR_ID1,COMPRESSOR_ID2,COMPRESSOR_ID3,COMPRESSOR_ID4);
         compressor.start();
     }
 
