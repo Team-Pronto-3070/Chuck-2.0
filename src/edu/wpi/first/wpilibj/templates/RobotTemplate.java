@@ -4,28 +4,21 @@ import edu.wpi.first.wpilibj.IterativeRobot;
 import edu.wpi.first.wpilibj.*;
 
 public class RobotTemplate extends IterativeRobot implements Pronstants{
-    /**
-     * This function is run when the robot is first started up and should be
-     * used for any initialization code.
-     */
+    Compressor compressor;
+    Pronstants pronstants;
     public void robotInit() {
-        
+        compressor = new Compressor(1,13,1,8);
+        compressor.start;
     }
-    /**
-     * This function is called periodically during autonomous
-     */
+
     public void autonomousPeriodic() {
 
     }
-    /**
-     * This function is called periodically during operator control
-     */
+
     public void teleopPeriodic() {
         
     }
-    /**
-     * This function is called periodically during test mode
-     */
+
     public void testPeriodic() {
     
     }
